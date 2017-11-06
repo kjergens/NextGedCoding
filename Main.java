@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 class Main {
   public static void main(String[] args) throws Exception {
     // Open a file and save as a BufferedImage (a 2D int array)
-    File f = new File("bPic.png");
+    File f = new File("aPic.png");
     BufferedImage image = ImageIO.read(f);
     
     // Get some information about the 2D array
