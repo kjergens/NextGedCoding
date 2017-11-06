@@ -35,11 +35,11 @@ class Main {
     // PART 2: Invert the colors, i.e. create a photo-negative. Do all the columns
     //    in all the rows. (This starter code does it for the top-left pixel.)
     Color originalColor = new Color(image.getRGB(0, 0)); // column, row
-		int red = originalColor.getRed();
-		int green = originalColor.getGreen();
-		int blue = originalColor.getBlue();
-		Color invertedColor = new Color(255-red, 255-green, 255-blue); // create inverted color
-		image.setRGB(0, 0, invertedColor.getRGB()); // column, row, pixel value
+    int red = originalColor.getRed();
+    int green = originalColor.getGreen();
+    int blue = originalColor.getBlue();
+    Color invertedColor = new Color(255-red, 255-green, 255-blue); // create inverted color
+    image.setRGB(0, 0, invertedColor.getRGB()); // column, row, pixel value
     
     // Create a new file so we don't mess up the original
     File output = new File(f.getName().replace(".png", "") + "_new.png");
